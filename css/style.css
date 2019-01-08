@@ -1,0 +1,254 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.btn-begin-demo {
+	margin-top: 100px;
+	padding: 10px 15px 10px 15px !important;
+	color: white;
+	background-color: #ff891e;
+	border-radius: 3px !important;
+}
+
+button:focus {
+	border:none !important;
+}
+
+.slid {
+	max-width:100%;
+	height: 100vh;
+}
+
+.slid-1 {
+	background: url(../img/slider_1.jpg) no-repeat top center / cover ;
+}
+.slid-2 {
+	background: url(../img/slider_2.jpg) no-repeat top center / cover ;
+}
+.slid-3 {
+	background: url(../img/slider_3.jpg) no-repeat top center / cover ;
+}
+.slid-4 {
+	background: url(../img/slider_4.jpg) no-repeat top center / cover ;
+}
+
+.slid__text {
+	max-width: 559px;
+	position: absolute;
+	left: 45%;
+	top: 34%;
+}
+
+.slid__text h1 {
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 50px;
+}
+
+.slid__text p {
+	font-size: 26px;
+	line-height: 40.05px;
+}
+
+.slid__text button {
+	margin-top: 10px;		
+	font-size: 16px;
+	font-weight: 400;
+	padding: 9px 28px 9px 28px !important;	
+}
+
+.slid__button-1 {
+	color: #fff;
+	background-color: #ff891e;
+}
+
+.slid__button-2 {
+	color: #000;
+	margin-left: 22px;
+}
+
+.prev {
+	display: flex;
+	align-items: center !important;
+}
+
+.parent-slide-prev  {
+	margin-left: 13px;
+}
+
+.slider-prev__text > p {
+	margin-left: 10px;
+	text-shadow: 0 1px 1px rgba(2, 2, 2, 0.2);
+	color:  #fff;
+	font-size: 12px;
+	font-weight: 700;
+
+}
+.slider-prev__text > h4 {
+	margin-top: 15px;
+	font-size: 11px;
+	margin-left: 10px;
+	color:  #fff;
+	font-weight: 400;
+}
+
+
+.slider-prev__text {
+	display: flex;
+	flex-direction: column !important;
+	justify-content: center !important;
+}
+
+.slider-prev__img {
+	margin-left: 10px;
+}
+
+.slide-prev {
+	display: flex;
+	justify-content: center !important;
+	align-items: center;
+	width: 275px;
+	height: 67px;
+	border-radius: 3px;
+	background : rgba(0%, 0%, 0%, 0.15);
+}
+
+.slide-prev:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* carousel control setting */
+
+	.carousel-control-next, .carousel-control-prev{
+
+		top: 50%;
+		width: 7%;
+		height: 10%;
+		opacity: 0.1 !important;
+		border-radius: 3px;
+		background-color: black;
+		color: #fff !important;
+
+	}
+
+/* end carousel control setting */
+
+
+
+/* begin media qeury */ 
+
+@media all and (min-width: 936px)  and (max-width: 1300px) {
+
+	.slider-prev__img img {
+		width: 40px;
+		height: 43px;
+	}
+
+	.slide-prev {
+		width: 224px !important;
+		height: 55px !important;
+	}	
+	
+	.slider-prev__text > p {
+		font-size: 10px;
+	}
+
+	.slider-prev__text > h4 {
+		font-size: 10px;
+	}
+}
+
+@media all and (min-width: 810px) and (max-width: 935px ) {
+
+	.slid__text {
+		left: 40%;
+	}
+
+	.carousel-indicators li {
+		border-radius: 50%;
+		width: 15px;
+		height: 14px;
+		border: 1px solid #282828;
+	}
+
+	.carousel-indicators .active {
+		border-radius: 50%;
+		background-color: #282828;
+	}
+	
+	
+
+	.slider-prev__text > p {
+		font-size: 10px;
+	}
+
+	.slider-prev__text > h4 {
+		font-size: 10px;
+	}
+
+}
+
+@media all and (max-width: 810px) {
+
+	.slid__text {
+			text-align: center;
+			left: 13%;
+		}
+
+	.slid__button-2 {
+		display: none;		
+	}
+
+	.carousel-indicators li {
+		border-radius: 50%;
+		width: 15px;
+		height: 14px;
+		border: 1px solid #282828;
+	}
+
+	.carousel-indicators .active {
+		border-radius: 50%;
+		background-color: #282828;
+	}
+
+	.slid-1 {
+		background: url(../img/slider_1min.jpg) no-repeat top center / cover ;	
+	}.slid-2 {
+		background: url(../img/slider_2min.jpg) no-repeat top center / cover ;	
+	}.slid-3 {
+		background: url(../img/slider_3min.jpg) no-repeat top center / cover ;	
+	}.slid-4 {
+		background: url(../img/slider_4min.jpg) no-repeat top center / cover ;	
+	}
+}
+
+@media all and (max-width: 700px) {
+
+		.slid__text {
+			left: 10%;
+		}
+	}
+
+@media all and (max-width: 630px) {
+
+		.slid__text {
+			left: 5%;
+		}
+	}
+
+@media all and (max-width: 560px) {
+
+		.slid__text {
+			left: 2%;
+		}
+	}
+
+/* end media qeury */ 
